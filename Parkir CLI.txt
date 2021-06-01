@@ -1,0 +1,36 @@
+package com.example;
+import java.util.Scanner;
+
+public class Parkir2 extends Parkir1 {
+    String pesan;
+    Double jam, bayar, kembalian, total, diskon, kekurangan;
+
+    Scanner input = new Scanner(System.in);
+
+    void Transaksi()
+    {
+        System.out.println("===============Selamat Datang===============");
+        System.out.println("=======Aplikasi Parkir Mall Suka-Suka=======");
+        System.out.println("1. Motor");
+        System.out.println("2. Mobil");
+        System.out.println("--------------------------------------------");
+        System.out.print("Masukkan Pilihan Anda              : ");
+        pesan = input.nextLine();
+        switch (pesan) {
+            case ("Motor")
+                System.out.println("Pilihan Anda        : Motor");
+                System.out.println("Harga               : Rp. 2.000,-/Jam");
+                System.out.print("Berapa Jam            :  ");
+                jam = input.nextDouble();
+                total = jam * 2000;
+                System.out.println("Total Pembayaran    : Rp. "+total);
+                diskon = 0.05 * total;
+
+                break;
+
+            case ("Mobil")
+                System.out.println("Pilihan Anda");
+        }
+
+    }
+}

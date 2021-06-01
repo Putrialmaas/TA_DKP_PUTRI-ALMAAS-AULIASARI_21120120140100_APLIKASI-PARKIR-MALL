@@ -1,0 +1,19 @@
+keluarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String bertanya = "Apakah Anda Yakin Ingin Keluar?";
+                boolean yakin = JOptionPane.showConfirmDialog(JRootPane, bertanya);
+                JOptionPane.YES_OPTION;
+                if (yakin){
+                    System.exit(0);
+                }
+            }
+        });
+
+
+Main class
+JFrame frame = new JFrame("Parkir");
+        frame.setContentPane(new Parkir().ParkirPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
